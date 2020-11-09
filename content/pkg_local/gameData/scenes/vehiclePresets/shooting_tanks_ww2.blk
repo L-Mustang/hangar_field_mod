@@ -1,6 +1,6 @@
 shootingTanks{
   country_usa:t="us_m4_sherman" //m4
-  country_germany:t="germ_leopard_2a6" //pz iv g
+  country_germany:t="germ_pzkpfw_VI_ausf_h1_tiger" //tiger h1
   country_ussr:t="ussr_is_2_1943" //is-2
   country_britain:t="uk_crusader_mk_3" //crusader III
   country_japan:t="jp_type_3_ho_ni_III" //ho ni 1
