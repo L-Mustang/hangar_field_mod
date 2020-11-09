@@ -1,6 +1,6 @@
 movingTanks{
   country_usa:t="us_m4a3e8_76w_sherman" //m4a3 76 //remove tracks
-  country_germany:t="germ_pzkpfw_v_ausf_a_panther" //panther a
+  country_germany:t="germ_pzkpfw_V_ausf_a_panther" //panther a
   country_ussr:t="ussr_t_34_85_zis_53" //t-34-85
   country_britain:t="uk_a27m_cromwell_1" //cromwell 1
   country_japan:t="jp_type_3_chi_nu" //chi nu
