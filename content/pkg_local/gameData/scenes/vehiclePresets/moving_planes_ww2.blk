@@ -1,0 +1,11 @@
+movingPlanes{
+  country_usa:t="p-51d-5" //p-51d-5
+  country_germany:t="bf-109g-2" //bf-109-g2/trop
+  country_ussr:t="la-5fn" //la-5fn
+  country_britain:t="spitfire_mk5b_notrop" //spitfire mk5b
+  country_japan:t="a6m3_zero" //a6m3
+  country_italy:t="mc-202_italy" //c202
+  country_france:t="d_520_france" //d520
+  country_china:t="p-40c_china" //h81
+  country_sweden:t="ffvs_j22_b" //j22b
+}

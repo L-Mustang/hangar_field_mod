@@ -1,0 +1,11 @@
+shootingTanks{
+  country_usa:t="us_m1a2_abrams" //m1a2
+  country_germany:t="germ_leopard_2a6" //2a6
+  country_ussr:t="ussr_t_90a" //t90a
+  country_britain:t="uk_challenger_2_dorchester" //cr2f
+  country_japan:t="jp_type_90b" //type 90b
+  country_italy:t="it_c1_ariete_pso" //ariete pso
+  country_france:t="fr_leclerc_s2" //leclerc s2
+  country_china:t="cn_ztz_96a" //ztz-96a
+  country_sweden:t="sw_strv_122b_plss" //strv 122plss
+}

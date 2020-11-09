@@ -1,0 +1,11 @@
+movingPlanes{
+  country_usa:t="f9f-5"
+  country_germany:t="f-86_cl_13b_mk6"
+  country_ussr:t="mig-19pt"
+  country_britain:t="hunter_f1"
+  country_japan:t="f-86f-40_japan_blue_impulse"
+  country_italy:t="fiat_g91_ps"
+  country_france:t="etndard_4m"
+  country_china:t="mig-17_f5"
+  country_sweden:t="saab_j32b"
+}

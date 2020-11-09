@@ -1,0 +1,10 @@
+env{
+  env:t="14.5"
+  weight:r=10.0
+  compatibilityWeight:r=1.0
+}
+env{
+  env:t="21.15"
+  weight:r=1.0
+  compatibilityWeight:r=0.0
+}

@@ -1,0 +1,11 @@
+movingPlanes{
+  country_usa:t="f-4e" //f4e
+  country_germany:t="f-104g" //f104g
+  country_ussr:t="mig-21_bis" //mig-21bis
+  country_britain:t="harrier_gr1" //harrier gr1
+  country_japan:t="t2" //t2k
+  country_italy:t="fiat_g91_ys" //g91ys
+  country_france:t="mirage_3c" //mirage
+  country_china:t="q_5a" //q5ab
+  country_sweden:t="saab_sk60b" //saab sk60
+}

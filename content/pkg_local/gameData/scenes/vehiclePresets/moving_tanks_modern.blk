@@ -1,0 +1,11 @@
+movingTanks{
+  country_usa:t="us_m1128_mgs" //stryker
+  country_germany:t="germ_leopard_2a4" //2a4
+  country_ussr:t="ussr_bmp_3" //bmp3
+  country_britain:t="uk_fv510_isv" //warrior
+  country_japan:t="jp_type_16" //type 16
+  country_china:t="cn_wz_305" //wz305
+  country_italy:t="it_centauro_mgs_120" //centauro mgs
+  country_france:t="fr_amx_10rc" //amx10
+  country_sweden:t="sw_strf_9056" //strf 9056
+}

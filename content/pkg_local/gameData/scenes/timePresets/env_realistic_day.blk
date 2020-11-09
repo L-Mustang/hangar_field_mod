@@ -1,0 +1,147 @@
+env{
+  env:t="0.00"
+  weight:r=1.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="1.00"
+  weight:r=1.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="2.00"
+  weight:r=1.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="3.00"
+  weight:r=1.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="4.00"
+  weight:r=1.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="5.00"
+  weight:r=1.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="6.00"
+  weight:r=2.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="7.00"
+  weight:r=3.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="8.00"
+  weight:r=4.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="9.00"
+  weight:r=5.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="10.00"
+  weight:r=6.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="11.00"
+  weight:r=6.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="12.00"
+  weight:r=6.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="13.00"
+  weight:r=6.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="14.00"
+  weight:r=6.0
+  compatibilityWeight:r=1.0
+}
+
+env{
+  env:t="15.00"
+  weight:r=6.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="16.00"
+  weight:r=6.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="17.00"
+  weight:r=5.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="18.00"
+  weight:r=4.0
+  compatibilityWeight:r=0.0
+}
+
+
+env{
+  env:t="19.00"
+  weight:r=3.0
+  compatibilityWeight:r=0.0
+}
+
+
+env{
+  env:t="20.00"
+  weight:r=2.0
+  compatibilityWeight:r=0.0
+}
+
+
+env{
+  env:t="21.00"
+  weight:r=1.0
+  compatibilityWeight:r=0.0
+}
+
+
+env{
+  env:t="22.00"
+  weight:r=1.0
+  compatibilityWeight:r=0.0
+}
+
+env{
+  env:t="23.00"
+  weight:r=1.0
+  compatibilityWeight:r=0.0
+}

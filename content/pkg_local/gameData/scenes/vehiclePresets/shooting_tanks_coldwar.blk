@@ -1,0 +1,11 @@
+shootingTanks{
+  country_usa:t="us_m103" //m103
+  country_germany:t="germ_leopard_I" //leo 1
+  country_ussr:t="ussr_t_10a" //t10a
+  country_britain:t="uk_chieftain_mk_5" //chieftain mk5
+  country_japan:t="jp_type_74_f" //type 74f
+  country_italy:t="it_of_40_mk_1" //of-40
+  country_france:t="fr_amx_32" //amx-32
+  country_china:t="cn_type_69" //type 69
+  country_sweden:t="sw_strv_103c" //strv 103c
+}
