@@ -3,7 +3,7 @@ shootingTanks{
   country_germany:t="germ_leopard_2a6" //pz iv g
   country_ussr:t="ussr_is_2_1943" //is-2
   country_britain:t="uk_crusader_mk_3" //crusader III
-  country_japan:t="jp_type_3_ho_ni_iii" //ho ni 1
+  country_japan:t="jp_type_3_ho_ni_III" //ho ni 1
   country_italy:t="it_p_40" //p40 leoncello
   country_france:t="fr_lorraine_37l" //lorraine 37l
   country_china:t="cn_m5a1_stuart" //m5a1
