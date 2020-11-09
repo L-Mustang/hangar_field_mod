@@ -8,7 +8,7 @@ include "content/pkg_local/gameData/scenes/vehiclePresets/moving_planes_modern.b
 hangarMission:t="gameData/scenes/hangar_field_mission_mod_prem.blk" //"gameData/scenes/hangar_field_mission.blk"
 
 //Import times of day
-include "content/pkg_local/gameData/scenes/timePresets/env_realistic.blk"
+include "content/pkg_local/gameData/scenes/timePresets/env_realistic_day.blk"
 
 
 
