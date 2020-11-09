@@ -5,7 +5,7 @@ env{
 }
 
 env{
-  env:t="21.15"
+  env:t="20.50"
   weight:r=1.0
   compatibilityWeight:r=0.0
 }
