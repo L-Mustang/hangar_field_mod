@@ -30,7 +30,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This is a highly customizable version of War Thunder's field hangar, released in major update 2.0.
+This is a highly customizable version of War Thunder's field hangar, released in major update **2.0**.
 
 Features:
 * Customizable weather
@@ -83,7 +83,7 @@ Customisation of the hangar can be done in the `hangar_field_mod.blk` file in th
 
 ### Weather
 
-The weather can be adjusted in the following lines in the file:
+The weather can be adjusted in the following lines in the file. **Make sure to edit both lines with the same preset**:
 ```
 weather:t="default"
 hqWeather:t="default"
@@ -173,16 +173,16 @@ include"content/pkg_local/gameData/scenes/vehiclePresets/moving_tanks_ww2.blk"
 include"content/pkg_local/gameData/scenes/vehiclePresets/moving_planes_ww2.blk"
 ```
 
-### Premium vehicles
+### Premium/gift vehicles
 
-You can turn off the spots for premium vehicles. These spots will then be filled with vehicles from your lineup.
+You can turn off the spots for premium/gift vehicles. These spots will then be filled with vehicles from your lineup.
 
-Premium vehicles enabled:
+Premium/gift vehicles enabled:
 ```
 hangarMission:t="gameData/scenes/hangar_field_mission_mod_prem.blk"
 ```
 
-Premium vehicles disabled:
+Premium/gift vehicles disabled:
 ```
 hangarMission:t="gameData/scenes/hangar_field_mission_mod_noprem.blk"
 ```
@@ -209,24 +209,16 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- LICENSE -->
 ## License
-All included software is 
-
 Distributed under the MIT License. See `LICENSE` for more information.
 
+* [War Thunder Terms of Use](https://warthunder.com/en/support/termsofuse/)
+* [War Thunder End User License Agreement](https://warthunder.com/en/support/eula/)
+* [War Thunder Contribution Agreement](https://live.warthunder.com/contribution_agreement/)
 
 
 <!-- CONTACT -->
 ## Contact
 Project Link: [https://github.com/Lord-Mustang/hangar_field_mod](https://github.com/Lord-Mustang/hangar_field_mod)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [War Thunder Terms of Use](https://warthunder.com/en/support/termsofuse/)
-* [War Thunder End User License Agreement](https://warthunder.com/en/support/eula/)
-* [War Thunder Contribution Agreement](https://live.warthunder.com/contribution_agreement/)
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
