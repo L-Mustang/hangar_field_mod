@@ -61,6 +61,11 @@ This project uses the following projects:
 
 ### Installation
 
+1. Unzip the downloaded folder
+2. Copy the contents of the .zip archive into your `War Thunder` install directory
+
+### Installation from source
+
 1. Clone the repo
 ```sh
 git clone https://github.com/Lord-Mustang/hangar_field_mod.git
