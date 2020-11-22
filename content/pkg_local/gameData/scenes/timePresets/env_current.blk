@@ -1,0 +1,5 @@
+env{
+  env:t="0.0"
+  weight:r=1.0
+  compatibilityWeight:r=1.0
+}
