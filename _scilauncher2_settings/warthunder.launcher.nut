@@ -208,7 +208,7 @@ local buildDialogSettingsHTML = function() {
       [checkbox({id="enableHdr"}), loc("settings/enableHdr")],
 	  //Add
       [checkbox({id="premiumVehicles"}, true), loc("settings/hangar/premiumvehicles")],
-      [checkbox({id="cameraUnlocked"}, true), loc("settings/hangar/cameraunlocked")],
+      [checkbox({id="cameraUnlocked"}, false), loc("settings/hangar/cameraunlocked")],
     ]
   }) + checkbox({id="videoRAMwarningOff" style="display:none;" value="false"})
 
