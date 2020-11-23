@@ -5,7 +5,7 @@ include "content/pkg_local/gameData/scenes/vehiclePresets/shooting_tanks_modern.
 include "content/pkg_local/gameData/scenes/vehiclePresets/moving_tanks_modern.blk"
 include "content/pkg_local/gameData/scenes/vehiclePresets/moving_planes_modern.blk"
 
-hangarMission:t="gameData/scenes/hangar_field_mission_mod_prem.blk" //"gameData/scenes/hangar_field_mission.blk"
+hangarMission:t="gameData/scenes/hangar_field_mission_mod.blk" //"gameData/scenes/hangar_field_mission.blk"
 
 //Import times of day
 include "content/pkg_local/gameData/scenes/timePresets/env_realistic_day.blk"
