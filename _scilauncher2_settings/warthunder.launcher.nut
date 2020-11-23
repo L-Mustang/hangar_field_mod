@@ -762,7 +762,7 @@ local settings_scheme = {
 	  else
 	    resetLevelStars()
 	  
-	  ::copyFromDataBlock(env_blk, hangar_blk, true)
+	  ::copyBlk(env_blk, hangar_blk, true)
 	  hangar_blk.saveToTextFile(hangar_blk_path)
     }
   }
@@ -780,7 +780,7 @@ local settings_scheme = {
 	  foreach (key, value in vehiclesTbl) {
 	    local veh_blk_path = ::makeFullPath(::getGameDir(), concat("content\\pkg_local\\gameData\\scenes\\vehiclePresets\\", key, "_", value, ".blk"))
 		local veh_blk = ::create_and_load_blk(veh_blk_path)
-		::copyFromDataBlock(veh_blk, hangar_blk, true)
+		::copyBlk(veh_blk, hangar_blk, true)
 	  }
 	  
 	  local function setVehicleSpeed(speed) {

@@ -1,37 +1,37 @@
-function copyFromDataBlock(fromDataBlock, toDataBlock, override = true) {
-  if (!fromDataBlock || !toDataBlock) {
-    ::debug("ERROR: copyFromDataBlock: fromDataBlock or toDataBlock doesn't exist")
+function copyBlk(srcBlock, resBlock, overwrite = true) {
+  if (!srcBlock || !resBlock) {
+    ::debug("copyBlk: srcBlock or resBlock is null")
     return
   }
   local prevBlockName = null
   local removedBlocks = []
 
-  for (local i = 0; i < fromDataBlock.blockCount(); i++) {
-    local block = fromDataBlock.getBlock(i)
+  for (local i = 0; i < srcBlock.blockCount(); i++) {
+    local block = srcBlock.getBlock(i)
     local blockName = block.getBlockName()
 	
-    if (prevBlockName != blockName && override) {
-	  ::debug(concat("copyFromDataBlock: toDataBlock = Array length of removed blockNames = ", removedBlocks.len(), " and found index = ", removedBlocks.indexof(blockName)))
+    if (prevBlockName != blockName && overwrite) {
+	  ::debug(concat("copyBlk: resBlock = Array length of removed blockNames = ", removedBlocks.len(), " and found index = ", removedBlocks.indexof(blockName)))
 	  if (removedBlocks.indexof(blockName) == null) {
-	    ::debug(concat("copyFromDataBlock: toDataBlock = Prev block not equal to current block, removing all blocks with name = ", blockName))
-        toDataBlock.removeBlock(blockName)
+	    ::debug(concat("copyBlk: resBlock = Prev block not equal to current block, removing all blocks with name = ", blockName))
+        resBlock.removeBlock(blockName)
 	    removedBlocks.append(blockName)
 	  }
 	  else
-	    ::debug(concat("copyFromDataBlock: toDataBlock = Prev block not equal to current block, but block was already removed = ", blockName))
+	    ::debug(concat("copyBlk: resBlock = Prev block not equal to current block, but block was already removed = ", blockName))
     }
 	
-    toDataBlock[blockName] <- block
-	::debug(concat("copyFromDataBlock: toDataBlock = appended block = " blockName))
+    resBlock[blockName] <- block
+	::debug(concat("copyBlk: resBlock = appended block = " blockName))
 	
 	prevBlockName = blockName
   }
-  for (local i = 0; i < fromDataBlock.paramCount(); i++) {
-    local paramName = fromDataBlock.getParamName(i)
-	::debug(concat("copyFromDataBlock: toDataBlock = paramName found = ", toDataBlock?[paramName]))
-    if (toDataBlock?[paramName] == null)
-      toDataBlock[paramName] <- fromDataBlock[paramName]
-    else if (override)
-      toDataBlock[paramName] = fromDataBlock[paramName]
+  for (local i = 0; i < srcBlock.paramCount(); i++) {
+    local paramName = srcBlock.getParamName(i)
+	::debug(concat("copyBlk: resBlock = paramName found = ", resBlock?[paramName]))
+    if (resBlock?[paramName] == null)
+      resBlock[paramName] <- srcBlock[paramName]
+    else if (overwrite)
+      resBlock[paramName] = srcBlock[paramName]
   }
 }
