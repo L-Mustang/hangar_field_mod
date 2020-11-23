@@ -71,6 +71,12 @@ local hangar_blk = create_and_load_blk(hangar_blk_path)
 local scene_blk_path = ::makeFullPath(::getGameDir(), concat("content\\pkg_local\\gameData\\scenes\\hangar_field_mission_mod.blk"))
 local scene_blk = ::create_and_load_blk(scene_blk_path)
 
+local level_blk_path = ::makeFullPath(::getGameDir(), concat("content\\pkg_local\\levels\\hangar_field_mod.blk"))
+local level_blk = ::create_and_load_blk(level_blk_path)
+
+local countrycode_blk_path = ::makeFullPath(::getGameDir(), concat("content\\pkg_local\\config\\countrycode_latlong.blk"))
+local countrycode_blk = ::create_and_load_blk(countrycode_blk_path)
+
 ::addLocalization("launcher_settings\\settings_hangar_field_mod.csv")
 
 //  BUILD HTMLS here
@@ -202,7 +208,7 @@ local buildDialogSettingsHTML = function() {
       [checkbox({id="enableHdr"}), loc("settings/enableHdr")],
 	  //Add
       [checkbox({id="premiumVehicles"}, true), loc("settings/hangar/premiumvehicles")],
-
+      [checkbox({id="cameraUnlocked"}, true), loc("settings/hangar/cameraunlocked")],
     ]
   }) + checkbox({id="videoRAMwarningOff" style="display:none;" value="false"})
 
@@ -313,7 +319,6 @@ local buildDialogSettingsHTML = function() {
           ]
 		  title=loc("settings/hangar/vehiclepreset_title")
 		  })
-        //concat(input(merge({id="premiumVehicles", type="checkbox" }, {}), nbsp(1), loc("settings/hangar/premiumvehicles")))
       ]},
     ]
   })
@@ -721,13 +726,41 @@ local settings_scheme = {
 	  local env_blk_path = ::makeFullPath(::getGameDir(), concat("content\\pkg_local\\gameData\\scenes\\timePresets\\", val, ".blk"))
 	  local env_blk = ::create_and_load_blk(env_blk_path)
 	  
+	  function setLevelStars(lat, long, year, month, day) {
+	  	local block_stars = level_blk.getBlockByName("stars")
+		block_stars["latitude"] = lat
+		block_stars["longitude"] = long
+		block_stars["year"] = year
+		block_stars["month"] = month
+		block_stars["day"] = day
+		level_blk.saveToTextFile(level_blk_path)
+	  }
+	  
+	  function resetLevelStars() {
+	  	local block_stars = level_blk.getBlockByName("stars")
+		block_stars["latitude"] = 68.0
+		block_stars["longitude"] = 0.0
+		block_stars["year"] = 2000
+		block_stars["month"] = 5
+		block_stars["day"] = 4	 
+		level_blk.saveToTextFile(level_blk_path)		
+	  }
+	  
 	  if (val == "env_current") {
 	    local time = date()
 	    local loc_time = concat(time.hour, ".", time.min)
-	  
+		
+		local loc_system = ::getSystemLocation()
+		
+		local block = countrycode_blk.getBlockByName(loc_system)
+		::debug(concat("Locale found = ", block.getBlockName()))
+		setLevelStars(block["lat"], block["long"], time.year, time.month+1, time.day)
+		
 	    env_blk.env["env"] = loc_time
 	    ::debug(concat("Env = system time, set time to ", env_blk.env["env"]))
 	  }
+	  else
+	    resetLevelStars()
 	  
 	  ::copyFromDataBlock(env_blk, hangar_blk, true)
 	  hangar_blk.saveToTextFile(hangar_blk_path)
@@ -797,6 +830,24 @@ local settings_scheme = {
 			}
 		}
 		scene_blk.saveToTextFile(scene_blk_path)
+		
+	  }
+  }
+  
+  cameraUnlocked={ type="bool" defVal=false blk="hangar/cameraUnlocked"
+      setToBlk = function( blk, desc, val ) {
+	    set_blk_bool( blk, "hangar/cameraUnlocked", val)		
+		if(val) {
+		  hangar_blk.setPoint2("fovRange",Point2(1.0, 150.0))
+		  hangar_blk.setPoint2("vertRange",Point2(-89.0, 89.0))
+		  ::set_blk_real(hangar_blk, "minCamAlt", -100.0)
+		}
+		else {
+		  hangar_blk.setPoint2("fovRange",Point2(50.0, 90.0))
+		  hangar_blk.setPoint2("vertRange",Point2(-30.0, 85.0))
+		  ::set_blk_real(hangar_blk, "minCamAlt", 0.7)
+		}
+		hangar_blk.saveToTextFile(hangar_blk_path)
 		
 	  }
   }
@@ -1013,31 +1064,6 @@ function soundClick(){
 
 function rendererClick() {
   setRendererPreset()
-}
-
-function weatherPresetClick() { //Add
-  //Create block 1
-  local block1 = ::DataBlock()
-  block1.load(::makeFullPath(::getGameDir(), "test.blk"))
-
-  //Create block 2
-  local fblock2 = ::makeFullPath(::getGameDir(), "content\\pkg_local\\gameData\\test.blk")
-  local block2 = ::DataBlock()
-  block2.load(fblock2)
-  //block2.removeBlock("test")
-  //::set_blk_int(block2, "test/value", 6190)
-  //::set_blk_int(block2, "test/value_new", 4880)
-  //::set_blk_int(block2, "test_more/value", 3600)
-  ::copyFromDataBlock(block1, block2, true)
-  
-  //Add block 1 to block 2
-  //for (local i = 0; i < block2.paramCount(); i++) {
-  //  local paramName = block2.getParamName(i)
-  //  block1[paramName] <- block2[paramName]
-  //}
-  
-  block2.saveToTextFile(fblock2)
-  block1.saveToTextFile("test.blk")
 }
 
 function ssaaClick(){

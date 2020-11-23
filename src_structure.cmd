@@ -8,6 +8,8 @@ xcopy /Y /I "content\pkg_local\gameData\scenes\hangar_field_mission_mod.blk" "%v
 
 xcopy /Y /I /S /E "content\pkg_local\gameData\scenes\timePresets" "%varroot%\content\pkg_local\gameData\scenes\timePresets\"
 xcopy /Y /I /S /E "content\pkg_local\gameData\scenes\vehiclePresets" "%varroot%\content\pkg_local\gameData\scenes\vehiclePresets\"
+xcopy /Y /I /S /E "content\pkg_local\config" "%varroot%\content\pkg_local\config"
+
 
 xcopy /Y /I /S /E "_scilauncher2_settings" "%varroot%\_scilauncher2_settings\"
 

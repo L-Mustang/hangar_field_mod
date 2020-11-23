@@ -1,6 +1,6 @@
 function copyFromDataBlock(fromDataBlock, toDataBlock, override = true) {
   if (!fromDataBlock || !toDataBlock) {
-    :debug("ERROR: copyFromDataBlock: fromDataBlock or toDataBlock doesn't exist")
+    ::debug("ERROR: copyFromDataBlock: fromDataBlock or toDataBlock doesn't exist")
     return
   }
   local prevBlockName = null

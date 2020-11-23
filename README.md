@@ -88,6 +88,7 @@ hangar{
   timePreset:t="env_realistic"
   vehiclePreset:t="ww2"
   premiumVehicles:b=yes
+  cameraUnlocked:b=no
 }
 ```
 
@@ -129,6 +130,12 @@ vehiclePreset:
 ```
 
 premiumVehicles:
+```
+yes
+no
+```
+
+cameraUnlocked:
 ```
 yes
 no

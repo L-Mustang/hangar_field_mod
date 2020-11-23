@@ -1,0 +1,960 @@
+ad{
+  lat:r=42.5000
+  long:r=1.5000
+}
+ae{
+  lat:r=24.0000
+  long:r=54.0000
+}
+af{
+  lat:r=33.0000
+  long:r=65.0000
+}
+ag{
+  lat:r=17.0500
+  long:r=-61.8000
+}
+ai{
+  lat:r=18.2500
+  long:r=-63.1667
+}
+al{
+  lat:r=41.0000
+  long:r=20.0000
+}
+am{
+  lat:r=40.0000
+  long:r=45.0000
+}
+an{
+  lat:r=12.2500
+  long:r=-68.7500
+}
+ao{
+  lat:r=-12.5000
+  long:r=18.5000
+}
+ap{
+  lat:r=35.0000
+  long:r=105.0000
+}
+aq{
+  lat:r=-90.0000
+  long:r=0.0000
+}
+ar{
+  lat:r=-34.0000
+  long:r=-64.0000
+}
+as{
+  lat:r=-14.3333
+  long:r=-170.0000
+}
+at{
+  lat:r=47.3333
+  long:r=13.3333
+}
+au{
+  lat:r=-27.0000
+  long:r=133.0000
+}
+aw{
+  lat:r=12.5000
+  long:r=-69.9667
+}
+az{
+  lat:r=40.5000
+  long:r=47.5000
+}
+ba{
+  lat:r=44.0000
+  long:r=18.0000
+}
+bb{
+  lat:r=13.1667
+  long:r=-59.5333
+}
+bd{
+  lat:r=24.0000
+  long:r=90.0000
+}
+be{
+  lat:r=50.8333
+  long:r=4.0000
+}
+bf{
+  lat:r=13.0000
+  long:r=-2.0000
+}
+bg{
+  lat:r=43.0000
+  long:r=25.0000
+}
+bh{
+  lat:r=26.0000
+  long:r=50.5500
+}
+bi{
+  lat:r=-3.5000
+  long:r=30.0000
+}
+bj{
+  lat:r=9.5000
+  long:r=2.2500
+}
+bm{
+  lat:r=32.3333
+  long:r=-64.7500
+}
+bn{
+  lat:r=4.5000
+  long:r=114.6667
+}
+bo{
+  lat:r=-17.0000
+  long:r=-65.0000
+}
+br{
+  lat:r=-10.0000
+  long:r=-55.0000
+}
+bs{
+  lat:r=24.2500
+  long:r=-76.0000
+}
+bt{
+  lat:r=27.5000
+  long:r=90.5000
+}
+bv{
+  lat:r=-54.4333
+  long:r=3.4000
+}
+bw{
+  lat:r=-22.0000
+  long:r=24.0000
+}
+by{
+  lat:r=53.0000
+  long:r=28.0000
+}
+bz{
+  lat:r=17.2500
+  long:r=-88.7500
+}
+ca{
+  lat:r=60.0000
+  long:r=-95.0000
+}
+cc{
+  lat:r=-12.5000
+  long:r=96.8333
+}
+cd{
+  lat:r=0.0000
+  long:r=25.0000
+}
+cf{
+  lat:r=7.0000
+  long:r=21.0000
+}
+cg{
+  lat:r=-1.0000
+  long:r=15.0000
+}
+ch{
+  lat:r=47.0000
+  long:r=8.0000
+}
+ci{
+  lat:r=8.0000
+  long:r=-5.0000
+}
+ck{
+  lat:r=-21.2333
+  long:r=-159.7667
+}
+cl{
+  lat:r=-30.0000
+  long:r=-71.0000
+}
+cm{
+  lat:r=6.0000
+  long:r=12.0000
+}
+cn{
+  lat:r=35.0000
+  long:r=105.0000
+}
+co{
+  lat:r=4.0000
+  long:r=-72.0000
+}
+cr{
+  lat:r=10.0000
+  long:r=-84.0000
+}
+cu{
+  lat:r=21.5000
+  long:r=-80.0000
+}
+cv{
+  lat:r=16.0000
+  long:r=-24.0000
+}
+cx{
+  lat:r=-10.5000
+  long:r=105.6667
+}
+cy{
+  lat:r=35.0000
+  long:r=33.0000
+}
+cz{
+  lat:r=49.7500
+  long:r=15.5000
+}
+de{
+  lat:r=51.0000
+  long:r=9.0000
+}
+dj{
+  lat:r=11.5000
+  long:r=43.0000
+}
+dk{
+  lat:r=56.0000
+  long:r=10.0000
+}
+dm{
+  lat:r=15.4167
+  long:r=-61.3333
+}
+do{
+  lat:r=19.0000
+  long:r=-70.6667
+}
+dz{
+  lat:r=28.0000
+  long:r=3.0000
+}
+ec{
+  lat:r=-2.0000
+  long:r=-77.5000
+}
+ee{
+  lat:r=59.0000
+  long:r=26.0000
+}
+eg{
+  lat:r=27.0000
+  long:r=30.0000
+}
+eh{
+  lat:r=24.5000
+  long:r=-13.0000
+}
+er{
+  lat:r=15.0000
+  long:r=39.0000
+}
+es{
+  lat:r=40.0000
+  long:r=-4.0000
+}
+et{
+  lat:r=8.0000
+  long:r=38.0000
+}
+eu{
+  lat:r=47.0000
+  long:r=8.0000
+}
+fi{
+  lat:r=64.0000
+  long:r=26.0000
+}
+fj{
+  lat:r=-18.0000
+  long:r=175.0000
+}
+fk{
+  lat:r=-51.7500
+  long:r=-59.0000
+}
+fm{
+  lat:r=6.9167
+  long:r=158.2500
+}
+fo{
+  lat:r=62.0000
+  long:r=-7.0000
+}
+fr{
+  lat:r=46.0000
+  long:r=2.0000
+}
+ga{
+  lat:r=-1.0000
+  long:r=11.7500
+}
+gb{
+  lat:r=54.0000
+  long:r=-2.0000
+}
+gd{
+  lat:r=12.1167
+  long:r=-61.6667
+}
+ge{
+  lat:r=42.0000
+  long:r=43.5000
+}
+gf{
+  lat:r=4.0000
+  long:r=-53.0000
+}
+gh{
+  lat:r=8.0000
+  long:r=-2.0000
+}
+gi{
+  lat:r=36.1833
+  long:r=-5.3667
+}
+gl{
+  lat:r=72.0000
+  long:r=-40.0000
+}
+gm{
+  lat:r=13.4667
+  long:r=-16.5667
+}
+gn{
+  lat:r=11.0000
+  long:r=-10.0000
+}
+gp{
+  lat:r=16.2500
+  long:r=-61.5833
+}
+gq{
+  lat:r=2.0000
+  long:r=10.0000
+}
+gr{
+  lat:r=39.0000
+  long:r=22.0000
+}
+gs{
+  lat:r=-54.5000
+  long:r=-37.0000
+}
+gt{
+  lat:r=15.5000
+  long:r=-90.2500
+}
+gu{
+  lat:r=13.4667
+  long:r=144.7833
+}
+gw{
+  lat:r=12.0000
+  long:r=-15.0000
+}
+gy{
+  lat:r=5.0000
+  long:r=-59.0000
+}
+hk{
+  lat:r=22.2500
+  long:r=114.1667
+}
+hm{
+  lat:r=-53.1000
+  long:r=72.5167
+}
+hn{
+  lat:r=15.0000
+  long:r=-86.5000
+}
+hr{
+  lat:r=45.1667
+  long:r=15.5000
+}
+ht{
+  lat:r=19.0000
+  long:r=-72.4167
+}
+hu{
+  lat:r=47.0000
+  long:r=20.0000
+}
+id{
+  lat:r=-5.0000
+  long:r=120.0000
+}
+ie{
+  lat:r=53.0000
+  long:r=-8.0000
+}
+il{
+  lat:r=31.5000
+  long:r=34.7500
+}
+in{
+  lat:r=20.0000
+  long:r=77.0000
+}
+io{
+  lat:r=-6.0000
+  long:r=71.5000
+}
+iq{
+  lat:r=33.0000
+  long:r=44.0000
+}
+ir{
+  lat:r=32.0000
+  long:r=53.0000
+}
+is{
+  lat:r=65.0000
+  long:r=-18.0000
+}
+it{
+  lat:r=42.8333
+  long:r=12.8333
+}
+jm{
+  lat:r=18.2500
+  long:r=-77.5000
+}
+jo{
+  lat:r=31.0000
+  long:r=36.0000
+}
+jp{
+  lat:r=36.0000
+  long:r=138.0000
+}
+ke{
+  lat:r=1.0000
+  long:r=38.0000
+}
+kg{
+  lat:r=41.0000
+  long:r=75.0000
+}
+kh{
+  lat:r=13.0000
+  long:r=105.0000
+}
+ki{
+  lat:r=1.4167
+  long:r=173.0000
+}
+km{
+  lat:r=-12.1667
+  long:r=44.2500
+}
+kn{
+  lat:r=17.3333
+  long:r=-62.7500
+}
+kp{
+  lat:r=40.0000
+  long:r=127.0000
+}
+kr{
+  lat:r=37.0000
+  long:r=127.5000
+}
+kw{
+  lat:r=29.3375
+  long:r=47.6581
+}
+ky{
+  lat:r=19.5000
+  long:r=-80.5000
+}
+kz{
+  lat:r=48.0000
+  long:r=68.0000
+}
+la{
+  lat:r=18.0000
+  long:r=105.0000
+}
+lb{
+  lat:r=33.8333
+  long:r=35.8333
+}
+lc{
+  lat:r=13.8833
+  long:r=-61.1333
+}
+li{
+  lat:r=47.1667
+  long:r=9.5333
+}
+lk{
+  lat:r=7.0000
+  long:r=81.0000
+}
+lr{
+  lat:r=6.5000
+  long:r=-9.5000
+}
+ls{
+  lat:r=-29.5000
+  long:r=28.5000
+}
+lt{
+  lat:r=56.0000
+  long:r=24.0000
+}
+lu{
+  lat:r=49.7500
+  long:r=6.1667
+}
+lv{
+  lat:r=57.0000
+  long:r=25.0000
+}
+ly{
+  lat:r=25.0000
+  long:r=17.0000
+}
+ma{
+  lat:r=32.0000
+  long:r=-5.0000
+}
+mc{
+  lat:r=43.7333
+  long:r=7.4000
+}
+md{
+  lat:r=47.0000
+  long:r=29.0000
+}
+me{
+  lat:r=42.0000
+  long:r=19.0000
+}
+mg{
+  lat:r=-20.0000
+  long:r=47.0000
+}
+mh{
+  lat:r=9.0000
+  long:r=168.0000
+}
+mk{
+  lat:r=41.8333
+  long:r=22.0000
+}
+ml{
+  lat:r=17.0000
+  long:r=-4.0000
+}
+mm{
+  lat:r=22.0000
+  long:r=98.0000
+}
+mn{
+  lat:r=46.0000
+  long:r=105.0000
+}
+mo{
+  lat:r=22.1667
+  long:r=113.5500
+}
+mp{
+  lat:r=15.2000
+  long:r=145.7500
+}
+mq{
+  lat:r=14.6667
+  long:r=-61.0000
+}
+mr{
+  lat:r=20.0000
+  long:r=-12.0000
+}
+ms{
+  lat:r=16.7500
+  long:r=-62.2000
+}
+mt{
+  lat:r=35.8333
+  long:r=14.5833
+}
+mu{
+  lat:r=-20.2833
+  long:r=57.5500
+}
+mv{
+  lat:r=3.2500
+  long:r=73.0000
+}
+mw{
+  lat:r=-13.5000
+  long:r=34.0000
+}
+mx{
+  lat:r=23.0000
+  long:r=-102.0000
+}
+my{
+  lat:r=2.5000
+  long:r=112.5000
+}
+mz{
+  lat:r=-18.2500
+  long:r=35.0000
+}
+na{
+  lat:r=-22.0000
+  long:r=17.0000
+}
+nc{
+  lat:r=-21.5000
+  long:r=165.5000
+}
+ne{
+  lat:r=16.0000
+  long:r=8.0000
+}
+nf{
+  lat:r=-29.0333
+  long:r=167.9500
+}
+ng{
+  lat:r=10.0000
+  long:r=8.0000
+}
+ni{
+  lat:r=13.0000
+  long:r=-85.0000
+}
+nl{
+  lat:r=52.5000
+  long:r=5.7500
+}
+no{
+  lat:r=62.0000
+  long:r=10.0000
+}
+np{
+  lat:r=28.0000
+  long:r=84.0000
+}
+nr{
+  lat:r=-0.5333
+  long:r=166.9167
+}
+nu{
+  lat:r=-19.0333
+  long:r=-169.8667
+}
+nz{
+  lat:r=-41.0000
+  long:r=174.0000
+}
+om{
+  lat:r=21.0000
+  long:r=57.0000
+}
+pa{
+  lat:r=9.0000
+  long:r=-80.0000
+}
+pe{
+  lat:r=-10.0000
+  long:r=-76.0000
+}
+pf{
+  lat:r=-15.0000
+  long:r=-140.0000
+}
+pg{
+  lat:r=-6.0000
+  long:r=147.0000
+}
+ph{
+  lat:r=13.0000
+  long:r=122.0000
+}
+pk{
+  lat:r=30.0000
+  long:r=70.0000
+}
+pl{
+  lat:r=52.0000
+  long:r=20.0000
+}
+pm{
+  lat:r=46.8333
+  long:r=-56.3333
+}
+pr{
+  lat:r=18.2500
+  long:r=-66.5000
+}
+ps{
+  lat:r=32.0000
+  long:r=35.2500
+}
+pt{
+  lat:r=39.5000
+  long:r=-8.0000
+}
+pw{
+  lat:r=7.5000
+  long:r=134.5000
+}
+py{
+  lat:r=-23.0000
+  long:r=-58.0000
+}
+qa{
+  lat:r=25.5000
+  long:r=51.2500
+}
+re{
+  lat:r=-21.1000
+  long:r=55.6000
+}
+ro{
+  lat:r=46.0000
+  long:r=25.0000
+}
+rs{
+  lat:r=44.0000
+  long:r=21.0000
+}
+ru{
+  lat:r=60.0000
+  long:r=100.0000
+}
+rw{
+  lat:r=-2.0000
+  long:r=30.0000
+}
+sa{
+  lat:r=25.0000
+  long:r=45.0000
+}
+sb{
+  lat:r=-8.0000
+  long:r=159.0000
+}
+sc{
+  lat:r=-4.5833
+  long:r=55.6667
+}
+sd{
+  lat:r=15.0000
+  long:r=30.0000
+}
+se{
+  lat:r=62.0000
+  long:r=15.0000
+}
+sg{
+  lat:r=1.3667
+  long:r=103.8000
+}
+sh{
+  lat:r=-15.9333
+  long:r=-5.7000
+}
+si{
+  lat:r=46.0000
+  long:r=15.0000
+}
+sj{
+  lat:r=78.0000
+  long:r=20.0000
+}
+sk{
+  lat:r=48.6667
+  long:r=19.5000
+}
+sl{
+  lat:r=8.5000
+  long:r=-11.5000
+}
+sm{
+  lat:r=43.7667
+  long:r=12.4167
+}
+sn{
+  lat:r=14.0000
+  long:r=-14.0000
+}
+so{
+  lat:r=10.0000
+  long:r=49.0000
+}
+sr{
+  lat:r=4.0000
+  long:r=-56.0000
+}
+st{
+  lat:r=1.0000
+  long:r=7.0000
+}
+sv{
+  lat:r=13.8333
+  long:r=-88.9167
+}
+sy{
+  lat:r=35.0000
+  long:r=38.0000
+}
+sz{
+  lat:r=-26.5000
+  long:r=31.5000
+}
+tc{
+  lat:r=21.7500
+  long:r=-71.5833
+}
+td{
+  lat:r=15.0000
+  long:r=19.0000
+}
+tf{
+  lat:r=-43.0000
+  long:r=67.0000
+}
+tg{
+  lat:r=8.0000
+  long:r=1.1667
+}
+th{
+  lat:r=15.0000
+  long:r=100.0000
+}
+tj{
+  lat:r=39.0000
+  long:r=71.0000
+}
+tk{
+  lat:r=-9.0000
+  long:r=-172.0000
+}
+tm{
+  lat:r=40.0000
+  long:r=60.0000
+}
+tn{
+  lat:r=34.0000
+  long:r=9.0000
+}
+to{
+  lat:r=-20.0000
+  long:r=-175.0000
+}
+tr{
+  lat:r=39.0000
+  long:r=35.0000
+}
+tt{
+  lat:r=11.0000
+  long:r=-61.0000
+}
+tv{
+  lat:r=-8.0000
+  long:r=178.0000
+}
+tw{
+  lat:r=23.5000
+  long:r=121.0000
+}
+tz{
+  lat:r=-6.0000
+  long:r=35.0000
+}
+ua{
+  lat:r=49.0000
+  long:r=32.0000
+}
+ug{
+  lat:r=1.0000
+  long:r=32.0000
+}
+um{
+  lat:r=19.2833
+  long:r=166.6000
+}
+us{
+  lat:r=38.0000
+  long:r=-97.0000
+}
+uy{
+  lat:r=-33.0000
+  long:r=-56.0000
+}
+uz{
+  lat:r=41.0000
+  long:r=64.0000
+}
+va{
+  lat:r=41.9000
+  long:r=12.4500
+}
+vc{
+  lat:r=13.2500
+  long:r=-61.2000
+}
+ve{
+  lat:r=8.0000
+  long:r=-66.0000
+}
+vg{
+  lat:r=18.5000
+  long:r=-64.5000
+}
+vi{
+  lat:r=18.3333
+  long:r=-64.8333
+}
+vn{
+  lat:r=16.0000
+  long:r=106.0000
+}
+vu{
+  lat:r=-16.0000
+  long:r=167.0000
+}
+wf{
+  lat:r=-13.3000
+  long:r=-176.2000
+}
+ws{
+  lat:r=-13.5833
+  long:r=-172.3333
+}
+ye{
+  lat:r=15.0000
+  long:r=48.0000
+}
+yt{
+  lat:r=-12.8333
+  long:r=45.1667
+}
+za{
+  lat:r=-29.0000
+  long:r=24.0000
+}
+zm{
+  lat:r=-15.0000
+  long:r=30.0000
+}
+zw{
+  lat:r=-20.0000
+  long:r=30.0000
+}
