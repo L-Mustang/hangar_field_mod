@@ -261,4 +261,4 @@ Project Link: [https://github.com/Lord-Mustang/hangar_field_mod](https://github.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot00.jpg
+[product-screenshot]: images/splash.jpg
