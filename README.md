@@ -144,7 +144,7 @@ no
 <!-- PRESET EXAMPLES -->
 ## Preset customisation
 
-** Advanced users only. Change any values here at your own risk **
+**Advanced users only. Change any values here at your own risk**
 
 Customisation of the hangar presets can be done in the `hangar_field_mod.blk` file in the top directory.
 
@@ -152,7 +152,7 @@ Customisation of the hangar presets can be done in the `hangar_field_mod.blk` fi
 
 The weather presets can be adjusted in the files in the following file:
 ```
-/content/pkg_local/gameData/environments/weather_types_hangar_field_mod.blk
+content/pkg_local/gameData/environments/weather_types_hangar_field_mod.blk
 ```
 
 ### Time of day
