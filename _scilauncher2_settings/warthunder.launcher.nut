@@ -752,7 +752,10 @@ local settings_scheme = {
 		
 		local loc_system = ::getSystemLocation()
 		
-		local block = countrycode_blk.getBlockByName(loc_system)
+		local block = countrycode_blk?.getBlockByName(loc_system)
+		if(!block) 
+		  resetLevelStars()
+
 		::debug(concat("Locale found = ", block.getBlockName()))
 		setLevelStars(block["lat"], block["long"], time.year, time.month+1, time.day)
 		
