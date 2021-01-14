@@ -1,3 +1,8 @@
+/**
+ * @param {DataBlock} srcBlock  Block to copy from
+ * @param {DataBlock} toBlock   Block to copy to
+ * @param {bool} overwrite      Will overwrite if block already exists
+ */
 function copyBlk(srcBlock, resBlock, overwrite = true) {
   if (!srcBlock || !resBlock) {
     ::debug("copyBlk: srcBlock or resBlock is null")
