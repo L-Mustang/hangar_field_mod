@@ -21,7 +21,6 @@ local getValue = ::getValue
 
 local haveToUseEac = false
 
-
 local platformMac = ("platformMac" in ::getroottable() && ::platformMac)
 
 debug("game_settings version 0.5.1")
@@ -61,23 +60,6 @@ if (!("create_and_load_blk" in ::getroottable())) {
 
 
 ::addLocalization("launcher_settings\\settings.csv")
-
-//Add
-::includeScript("launcher_settings\\blkUtils.launcher.nut")
-
-local hangar_blk_path = ::makeFullPath(::getGameDir(), "hangar_field_mod.blk")
-local hangar_blk = create_and_load_blk(hangar_blk_path)
-
-local scene_blk_path = ::makeFullPath(::getGameDir(), concat("content\\pkg_local\\gameData\\scenes\\hangar_field_mission_mod.blk"))
-local scene_blk = ::create_and_load_blk(scene_blk_path)
-
-local level_blk_path = ::makeFullPath(::getGameDir(), concat("content\\pkg_local\\levels\\hangar_field_mod.blk"))
-local level_blk = ::create_and_load_blk(level_blk_path)
-
-local countrycode_blk_path = ::makeFullPath(::getGameDir(), concat("content\\pkg_local\\config\\countrycode_latlong.blk"))
-local countrycode_blk = ::create_and_load_blk(countrycode_blk_path)
-
-::addLocalization("launcher_settings\\settings_hangar_field_mod.csv")
 
 //  BUILD HTMLS here
 ::gs <- {}
@@ -205,10 +187,7 @@ local buildDialogSettingsHTML = function() {
       [checkbox({id="ssao" style="display:none;"})],
       [checkbox({id="jpegShots"}, true), loc("settings/jpegShots")],
       [checkbox({id="compatibilityMode" onClick="compatibilityModeClick"}), {style="color:gray" v=loc("settings/compatibilityMode")}],
-      [checkbox({id="enableHdr"}), loc("settings/enableHdr")],
-	  //Add
-      [checkbox({id="premiumVehicles"}, true), loc("settings/hangar/premiumvehicles")],
-      [checkbox({id="cameraUnlocked"}, false), loc("settings/hangar/cameraunlocked")],
+      [checkbox({id="enableHdr"}), loc("settings/enableHdr")]
     ]
   }) + checkbox({id="videoRAMwarningOff" style="display:none;" value="false"})
 
@@ -276,60 +255,11 @@ local buildDialogSettingsHTML = function() {
     input({id="maxSeparation" class_="hidden" value="0.0005" maxlength="7" type="decimal"})
     input({id="zeroParallaxDist" class_="hidden" value="3.0" maxlength="5" type="decimal"})
   )
-  //Add
-  local part5 = h_table({class_= "option_table" col_num=6
-    raws = [
-	  [he("font", {color="gray" style="padding-bottom:2dip;"}, concat(loc("hangar_settings") ":"))],
-	  {id = "hangarGroup" cols = [
-	  	concat(loc("settings/hangar/weatherpreset") ":"), vselect({id="weatherPreset"
-	      options = [
-            {value="default" extra="selected" text= loc("settings/hangar/default")}
-            {value="cloudy"  text= loc("settings/hangar/cloudy")}
-		    {value="storm"  text= loc("settings/hangar/storm")}
-		    {value="clear"  text= loc("settings/hangar/clear")}
-		    {value="good"  text= loc("settings/hangar/good")}
-		    {value="hazy"  text= loc("settings/hangar/hazy")}
-		    {value="thin_clouds"  text= loc("settings/hangar/thin_clouds")}
-		    {value="thin_clouds_storm"  text= loc("settings/hangar/thin_clouds_storm")}
-		    {value="poor"  text= loc("settings/hangar/poor")}
-		    {value="blind"  text= loc("settings/hangar/blind")}
-		    {value="rain"  text= loc("settings/hangar/rain")}
-		    {value="thunder"  text= loc("settings/hangar/thunder")}
-		    {value="rain_uk"  text= loc("settings/hangar/rain_uk")}
-          ]
-		  title=loc("settings/hangar/weatherpreset_title")
-		  })
-	    concat(loc("settings/hangar/timepreset") ":"), vselect({id="timePreset"
-	      options = [
-            {value="env_default" extra="selected" text= loc("settings/hangar/env_default")}
-            {value="env_dawn"  text= loc("settings/hangar/env_dawn")}
-		    {value="env_dusk"  text= loc("settings/hangar/env_dusk")}
-		    {value="env_realistic"  text= loc("settings/hangar/env_realistic")}
-		    {value="env_realistic_day"  text= loc("settings/hangar/env_realistic_day")}
-		    {value="env_realistic_night"  text= loc("settings/hangar/env_realistic_night")}
-		    {value="env_current"  text= loc("settings/hangar/env_current")}
-          ]
-		  title=loc("settings/hangar/timepreset_title")
-		  })
-	    concat(loc("settings/hangar/vehiclepreset") ":"), vselect({id="vehiclePreset"
-	      options = [
-            {value="ww2" extra="selected" text= loc("settings/hangar/ww2")}
-            {value="coldwar"  text= loc("settings/hangar/coldwar")}
-		    {value="modern"  text= loc("settings/hangar/modern")}
-          ]
-		  title=loc("settings/hangar/vehiclepreset_title")
-		  })
-      ]},
-    ]
-  })
- 
 
   local leftCol = concat(
     he("div", {class_="dialog_li"}, part1)
     he("div", {class_="dialog_li"}, part3)
     he("div", {class_="dialog_li"}, part4)
-	//Add
-	he("div", {class_="dialog_li"}, part5) 
   )
 
   local rightCol = he("div", {class_="dialog_li"}, part2)
@@ -710,150 +640,6 @@ local settings_scheme = {
       set_blk_bool( blk, "video/vsync", val == "vsync_on" || val == "vsync_adaptive" )
       set_blk_bool( blk, "video/adaptive_vsync", val == "vsync_adaptive" )
     }
-  }
-  //Add
-  weatherPreset={ type="string" defVal="default"  blk="hangar/weatherPreset"
-    setToBlk = function( blk, desc, val ) {
-      set_blk_str( blk, "hangar/weatherPreset", val )
-	  ::set_blk_str( hangar_blk, "weather", val )
-	  ::set_blk_str( hangar_blk, "hqWeather", val )
-	  hangar_blk.saveToTextFile(hangar_blk_path)
-    }
-  }
-  
-  timePreset={ type="string" defVal="env_default"  blk="hangar/timePreset"
-    setToBlk = function( blk, desc, val ) {
-      set_blk_str( blk, "hangar/timePreset", val )
-	  local env_blk_path = ::makeFullPath(::getGameDir(), concat("content\\pkg_local\\gameData\\scenes\\timePresets\\", val, ".blk"))
-	  local env_blk = ::create_and_load_blk(env_blk_path)
-	  
-	  function setLevelStars(lat, long, year, month, day) {
-	  	local block_stars = level_blk.getBlockByName("stars")
-		block_stars["latitude"] = lat
-		block_stars["longitude"] = long
-		block_stars["year"] = year
-		block_stars["month"] = month
-		block_stars["day"] = day
-		level_blk.saveToTextFile(level_blk_path)
-	  }
-	  
-	  function resetLevelStars() {
-	  	local block_stars = level_blk.getBlockByName("stars")
-		block_stars["latitude"] = 68.0
-		block_stars["longitude"] = 0.0
-		block_stars["year"] = 2000
-		block_stars["month"] = 5
-		block_stars["day"] = 4	 
-		level_blk.saveToTextFile(level_blk_path)		
-	  }
-	  
-	  if (val == "env_current") {
-	    local time = date()
-	    local loc_time = concat(time.hour, ".", time.min)
-		
-		local loc_system = ::getSystemLocation()
-		
-		local block = countrycode_blk?.getBlockByName(loc_system)
-		if(!block) 
-		  resetLevelStars()
-
-		::debug(concat("Locale found = ", block.getBlockName()))
-		setLevelStars(block["lat"], block["long"], time.year, time.month+1, time.day)
-		
-	    env_blk.env["env"] = loc_time
-	    ::debug(concat("Env = system time, set time to ", env_blk.env["env"]))
-	  }
-	  else
-	    resetLevelStars()
-	  
-	  ::copyBlk(env_blk, hangar_blk, true)
-	  hangar_blk.saveToTextFile(hangar_blk_path)
-    }
-  }
-  
-  vehiclePreset={ type="string" defVal="ww2"  blk="hangar/vehiclePreset"
-    setToBlk = function( blk, desc, val ) {
-      set_blk_str( blk, "hangar/vehiclePreset", val )
-	  
-	  vehiclesTbl <- {
-        moving_planes = val
-        moving_tanks = val
-		shooting_tanks = val
-      }
-	  
-	  foreach (key, value in vehiclesTbl) {
-	    local veh_blk_path = ::makeFullPath(::getGameDir(), concat("content\\pkg_local\\gameData\\scenes\\vehiclePresets\\", key, "_", value, ".blk"))
-		local veh_blk = ::create_and_load_blk(veh_blk_path)
-		::copyBlk(veh_blk, hangar_blk, true)
-	  }
-	  
-	  local function setVehicleSpeed(speed) {
-	    if (typeof(speed) == "float") {
-          ::debug(concat("Applying plane speed = ", speed))		
-          for (local i = 0; i < scene_blk.blockCount(); i++) {
-            local block = scene_blk.getBlock(i)
-            local blockName = block.getBlockName()
-		    if(block?["setting.name"] == "ai_plane") {
-			  block["setting.speed"] = speed
-			}
-		  }
-		  scene_blk.saveToTextFile(scene_blk_path)
-		}
-	  }
-	  
-	  switch(vehiclesTbl.moving_planes) {
-	    case "ww2":
-	      setVehicleSpeed(400.0)
-		  break;
-		case "coldwar":
-		  setVehicleSpeed(500.0)
-		  break;
-		case "modern":
-		  setVehicleSpeed(600.0)
-		  break;
-		default:
-		  setVehicleSpeed(400.0)
-	  }
-	  
-	  hangar_blk.saveToTextFile(hangar_blk_path)
-    }
-  }
-  
-  premiumVehicles={ type="bool" defVal=true blk="hangar/premiumVehicles"
-      setToBlk = function( blk, desc, val ) {
-	    set_blk_bool( blk, "hangar/premiumVehicles", val)
-		
-		local premiumVehiclesArr = [0, 4, 8]
-		
-		for (local i = 0; i < scene_blk.blockCount(); i++) {
-            local block = scene_blk.getBlock(i)
-            local blockName = block.getBlockName()
-		    if(block?["forPremiumVehicle"] != null && premiumVehiclesArr.indexof(i) != null) {
-			  ::debug(concat("Backmodel ", i, " forPremiumVehicle = ", val))
-			  block["forPremiumVehicle"] = val
-			}
-		}
-		scene_blk.saveToTextFile(scene_blk_path)
-		
-	  }
-  }
-  
-  cameraUnlocked={ type="bool" defVal=false blk="hangar/cameraUnlocked"
-      setToBlk = function( blk, desc, val ) {
-	    set_blk_bool( blk, "hangar/cameraUnlocked", val)		
-		if(val) {
-		  hangar_blk.setPoint2("fovRange",Point2(1.0, 150.0))
-		  hangar_blk.setPoint2("vertRange",Point2(-89.0, 89.0))
-		  ::set_blk_real(hangar_blk, "minCamAlt", -100.0)
-		}
-		else {
-		  hangar_blk.setPoint2("fovRange",Point2(50.0, 90.0))
-		  hangar_blk.setPoint2("vertRange",Point2(-30.0, 85.0))
-		  ::set_blk_real(hangar_blk, "minCamAlt", 0.7)
-		}
-		hangar_blk.saveToTextFile(hangar_blk_path)
-		
-	  }
   }
 
 }
