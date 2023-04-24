@@ -6,7 +6,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-
+<!-- NOTICE -->
+### Project archived. Gaijin has fixed the exploit which was used to run custom code in the launcher.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of contents
@@ -256,7 +257,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
-Project Link: [https://github.com/Lord-Mustang/hangar_field_mod](https://github.com/Lord-Mustang/hangar_field_mod)
+Project Link: [https://github.com/L-Mustang/hangar_field_mod](https://github.com/Lord-Mustang/hangar_field_mod)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
